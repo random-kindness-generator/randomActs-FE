@@ -5,7 +5,7 @@ import {
     ADD_SUCCESS,
     ADD_FAILED,
     GET_ACTS,
-  } from '../actions/actactions';
+  } from '../actactions';
   
   
   
@@ -64,4 +64,5 @@ import {
   }
   
   export default reducer;
+
   
