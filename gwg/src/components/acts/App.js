@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
-import { getActs, addAct } from '../actions';
+import { getActs, addAct } from '../actactions';
 
 import ActsForm from './actsform';
 import ActsList from './actslist';

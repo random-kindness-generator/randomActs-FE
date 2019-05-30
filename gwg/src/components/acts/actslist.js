@@ -8,7 +8,7 @@ const ActsList = props => {
         <div className='acts-container'>
             <h1>Good Will Gestures</h1>
             <div className='acts-list'>
-            {props.acts.map((s, i) => <Act act={s} key={i}/>)}
+            {props.acts.map((s, i) => <Acts act={s} key={i}/>)}
             </div>
         </div>
     )
