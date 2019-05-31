@@ -8,7 +8,7 @@ import ActsForm from './actsform';
 import ActsList from './actslist';
 import ContactForm from '../contacts/contactsform';
 import ContactsList from '../contacts/contactslist';
-
+//import ActsNav from '../nav/nav'
 
 class App extends Component {
 
@@ -29,7 +29,7 @@ class App extends Component {
   }
 }
 
-componentDidMount() {
+/*componentDidMount() {
   this.props.getContacts()
 }
 
@@ -44,7 +44,7 @@ render() {
     </div>
   );
 }
-
+*/
 
 const mapStateToProps = state => {
   return {
