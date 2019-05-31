@@ -6,7 +6,8 @@ import { getActs, addAct } from '../actactions';
 
 import ActsForm from './actsform';
 import ActsList from './actslist';
-
+import ContactForm from '../contacts/contactsform';
+import ContactsList from '../contacts/contactslist';
 
 
 class App extends Component {
@@ -27,6 +28,23 @@ class App extends Component {
     );
   }
 }
+
+componentDidMount() {
+  this.props.getContacts()
+}
+
+render() {
+  return (
+    <div className="App">
+      <ContactForm 
+        contacts={this.props.contacts}
+        addContact={this.props.addContact} 
+      />
+      <ContactsList contacts={this.props.contacts} />
+    </div>
+  );
+}
+
 
 const mapStateToProps = state => {
   return {

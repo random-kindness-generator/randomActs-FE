@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Acts from './acts';
+import Acts from './acts.js';
 
 
 const ActsList = props => {

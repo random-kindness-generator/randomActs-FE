@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Contacts from './contacts';
+import Contacts from './contacts.js';
 
 
 const ContactsList = props => {
@@ -8,7 +8,7 @@ const ContactsList = props => {
         <div className='contacts-container'>
             <h1>Your Contacts</h1>
             <div className='contacts-list'>
-            {props.contacts.map((s, i) => <Contact contact={s} key={i}/>)}
+            {props.contacts.map((s, i) => <Contacts contact={s} key={i}/>)}
             </div>
         </div>
     )
